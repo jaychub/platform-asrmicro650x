@@ -194,6 +194,9 @@ env.Append(
             "LoRaWAN_DEBUG_LEVEL",
             2 if debug_level == "FREQ_AND_DIO" else (1 if debug_level == "FREQ" else 0),
         ),
+        ("LORAWAN_PREAMBLE_LENGTH", 8 if lorawan_config.get(
+            "preamble_length", 8) == 8 else 16
+        ),
     ]
 )
 
