@@ -163,12 +163,7 @@ if not board.get("build.ldscript", ""):
 lorawan_config = board.get("build.arduino.lorawan", {})
 region = lorawan_config.get("region", "US915")
 debug_level = lorawan_config.get("debug_level", "NONE")
-if (lorawan_config.get("preamble_length", 8) == 8):
-    print("************preamble=", 8)
-else : print("************preamble=", 16)
 
-print(lorawan_config.get(
-            "preamble_length", 8))
 env.Append(
     CPPDEFINES=[
         "REGION_%s" % region,
