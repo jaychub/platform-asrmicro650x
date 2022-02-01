@@ -1,5 +1,6 @@
 # ASR Microelectronics ASR605x (ASR6501, ASR6502): development platform for [PlatformIO](http://platformio.org)
 
+test
 [![Build Status](https://github.com/HelTecAutomation/platform-asrmicro650x/workflows/Examples/badge.svg)](https://github.com/HelTecAutomation/platform-asrmicro650x/actions)
 
 ASR Microelectronics ASR605x series is highly integrated and ultra low power SoC based on the PSoC 4000 series MCU (ARM Cortex M0+ Core) and Semtech SX1262 transceiver.
